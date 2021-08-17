@@ -94,16 +94,17 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0px 10px;
   cursor: pointer;
+  z-index: 1;
 }
 .header__boton:hover {
   background-color: rgba(255, 255, 255, 0.4);
   transition: 0.5s;
   color: black;
 }
-.header__derecha {
+.header__boton--derecha {
   right: 10px;
 }
-.header__izquierda {
+.header__boton--izquierda {
   left: 10px;
 }
 .header__paginacion {
@@ -112,6 +113,7 @@ body {
   left: 0px;
   right: 0px;
   text-align: center;
+  z-index: 1;
 }
 .header__paginacion-link {
   list-style: none;
@@ -137,22 +139,26 @@ body {
 }
 
 .card {
+  position: relative;
+}
+.card:hover .card__content {
+  transform: translate(5px, 5px) scale(1.05);
+  background-color: #04cc0496;
+}
+.card__content {
   width: 140px;
   height: 200px;
   clip-path: polygon(34% 0, 100% 0, 100% 83%, 75% 100%, 0 100%, 0 16%);
   background-color: rgba(5, 238, 33, 0.774);
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   font-family: sans-serif;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   margin: 15px;
   border: 5px solid rgba(251, 252, 253, 0.78);
-}
-.card:hover {
-  transform: translate(-3%, -3%) scale(1);
-  background-color: #04cc0496;
+  transition: transform 0.3s;
 }
 .card__title {
   padding: 12px 0;
@@ -232,7 +238,7 @@ body {
   padding: 10px 0 0 10px;
 }
 .cartas__day {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 .cartas__pipe {
@@ -257,4 +263,69 @@ body {
   justify-content: center;
   height: 250px;
   background: rgba(0, 0, 0, 0.823);
+}
+
+.noticia__titulo {
+  height: 50px;
+  background: #e2dfdf;
+  margin: 0;
+}
+
+.noticias__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.noticas__card {
+  background: #3e0157;
+  width: 270px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.noticas__title {
+  color: #cccccc;
+}
+
+.noticas__card-imagen {
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.noticas__card1 {
+  background-image: url(./imagenes/Steamoferts.jpg);
+}
+
+.noticias__card2 {
+  background-image: url(./imagenes/steamdeck.jpeg);
+}
+
+.noticias__card3 {
+  background-image: url(./imagenes/gtaremaster.jpg);
+}
+
+.noticas__text {
+  padding: 10px;
+  color: #ffffff;
+}
+
+.noticias__boton {
+  background-color: rgba(150, 14, 14, 0.981);
+  color: #fff;
+  padding: 15px 15px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+
+.noticas__card:hover {
+  background-color: rgb(17, 9, 9);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
 }
