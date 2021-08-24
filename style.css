@@ -259,8 +259,8 @@ body {
 .contenido__container {
   display: flex;
   justify-content: center;
-  height: 250px;
   background: rgba(0, 0, 0, 0.823);
+  flex-wrap: wrap;
 }
 
 .noticias__titulo {
