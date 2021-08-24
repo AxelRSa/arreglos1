@@ -1,0 +1,78 @@
+.contenido {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.823);
+  }
+}
+
+.noticias {
+
+  &__titulo {
+    height: 40px;
+    background: #d8d8d8;
+    margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: black;
+  }
+
+  &__card {
+    background: #3e0157;
+    width: 400px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  &__title {
+    color: #cccccc;
+  }
+
+  &__card-imagen {
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  &__card--image-1 {
+    background-image: url(../imagenes/Steamoferts.jpg);
+  }
+
+  &__card--image-2 {
+    background-image: url(../imagenes/steamdeck.jpeg);
+  }
+
+  &__card--image-3 {
+    background-image: url(../imagenes/gtaremaster.jpg);
+  }
+
+  &__text {
+    padding: 10px;
+    color: #ffffff;
+  }
+
+  &__boton {
+    background-color: rgba(150, 14, 14, 0.981);
+    color: #fff;
+    padding: 15px 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+  }
+
+  &__card:hover {
+    background-color: rgb(17, 9, 9);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+}

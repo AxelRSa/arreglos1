@@ -1,3 +1,11 @@
+.contenido {
+	&__reclamar {
+		height: 40px;
+		background: rgb(204, 204, 204);
+		margin: 0;
+	}
+}
+
 .header {
 	display: flex;
 	width: 100%;
@@ -6,7 +14,7 @@
 
 	&::after {
 		content: "";
-		background-color: rgb(10, 10, 10);
+		background-color: rgba(228, 68, 228, 0.659);
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -14,7 +22,6 @@
 		left: 0;
 		opacity: 0.3;
 	}
-
 	&__imagen {
 		width: 100%;
 		height: 100%;
@@ -23,8 +30,8 @@
 
 	&__texto-contenedor {
 		position: absolute;
-		top:50px;
-		right: 20px;
+		top: 5px;
+		right: 60px;
 		width: 400px;
 		color: #fff;
 		z-index: 10;
@@ -33,5 +40,51 @@
 	&__title {
 		font-size: 43px;
 		color: rgba(237, 236, 236, 0.905);
+	}
+
+	&__boton {
+		font-size: 40pt;
+		color: rgb(255, 0, 0);
+		font-weight: bolder;
+		position: absolute;
+		top: 30vh;
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 0px 10px;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	&__boton:hover {
+		background-color: rgba(255, 255, 255, 0.4);
+		transition: 0.5s;
+		color: black;
+	}
+
+	&__boton--derecha {
+		right: 10px;
+	}
+
+	&__boton--izquierda {
+		left: 10px
+	}
+
+	&__paginacion {
+		position: absolute;
+		bottom: 10px;
+		left: 0px;
+		right: 0px;
+		text-align: center;
+		z-index: 1;
+	}
+
+	&__paginacion-link {
+		list-style: none;
+		width: 25px;
+		height: 25px;
+		background-color: yellow;
+		border-radius: 50%;
+		display: inline-block;
+		margin-right: 10px;
+		cursor: pointer;
 	}
 }

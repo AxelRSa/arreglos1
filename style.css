@@ -32,16 +32,18 @@ body {
   color: #0088a9;
 }
 .navigation__icon {
-  width: 20px;
-  height: 20px;
-  background-color: #ffffff55;
-  border-radius: 50%;
-  padding: 6px;
-  margin: 0 2px;
+  width: 25px;
+  height: 25px;
 }
 
 .titulo__texto {
-  height: 40px;
+  height: 50px;
+  background: #cccccc;
+  margin: 0;
+}
+
+.contenido__reclamar {
+  height: 50px;
   background: #cccccc;
   margin: 0;
 }
@@ -87,7 +89,7 @@ body {
 }
 .header__boton {
   font-size: 40pt;
-  color: yellow;
+  color: red;
   font-weight: bolder;
   position: absolute;
   top: 30vh;
@@ -133,32 +135,28 @@ body {
 }
 .calendar__container {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   background: #020202;
 }
 
 .card {
-  position: relative;
-}
-.card:hover .card__content {
-  transform: translate(5px, 5px) scale(1.05);
-  background-color: #04cc0496;
-}
-.card__content {
   width: 140px;
   height: 200px;
   clip-path: polygon(34% 0, 100% 0, 100% 83%, 75% 100%, 0 100%, 0 16%);
   background-color: rgba(5, 238, 33, 0.774);
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   font-family: sans-serif;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   margin: 15px;
   border: 5px solid rgba(251, 252, 253, 0.78);
-  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translate(-3%, -3%) scale(1);
+  background-color: #04cc0496;
 }
 .card__title {
   padding: 12px 0;
@@ -238,7 +236,7 @@ body {
   padding: 10px 0 0 10px;
 }
 .cartas__day {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
 .cartas__pipe {
@@ -265,53 +263,45 @@ body {
   background: rgba(0, 0, 0, 0.823);
 }
 
-.noticia__titulo {
-  height: 50px;
-  background: #e2dfdf;
+.noticias__titulo {
+  height: 40px;
+  background: #d8d8d8;
   margin: 0;
 }
-
 .noticias__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background: black;
 }
-
-.noticas__card {
+.noticias__card {
   background: #3e0157;
-  width: 270px;
+  width: 400px;
   margin: 10px;
   border-radius: 15px;
 }
-
-.noticas__title {
+.noticias__title {
   color: #cccccc;
 }
-
-.noticas__card-imagen {
+.noticias__card-imagen {
   height: 150px;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
-
-.noticas__card1 {
-  background-image: url(./imagenes/Steamoferts.jpg);
+.noticias__card--image-1 {
+  background-image: url(../imagenes/Steamoferts.jpg);
 }
-
-.noticias__card2 {
-  background-image: url(./imagenes/steamdeck.jpeg);
+.noticias__card--image-2 {
+  background-image: url(../imagenes/steamdeck.jpeg);
 }
-
-.noticias__card3 {
-  background-image: url(./imagenes/gtaremaster.jpg);
+.noticias__card--image-3 {
+  background-image: url(../imagenes/gtaremaster.jpg);
 }
-
-.noticas__text {
+.noticias__text {
   padding: 10px;
   color: #ffffff;
 }
-
 .noticias__boton {
   background-color: rgba(150, 14, 14, 0.981);
   color: #fff;
@@ -321,9 +311,8 @@ body {
   margin: 20px 50px;
   text-decoration: none;
 }
-
-.noticas__card:hover {
-  background-color: rgb(17, 9, 9);
+.noticias__card:hover {
+  background-color: #110909;
   color: white;
   cursor: pointer;
   transform: scale(1.03);
