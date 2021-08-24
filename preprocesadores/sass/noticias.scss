@@ -39,18 +39,18 @@
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
-  }
 
-  &__card--image-1 {
-    background-image: url(../imagenes/Steamoferts.jpg);
-  }
+    &--image-1 {
+      background-image: url(../imagenes/Steamoferts.jpg);
+    }
 
-  &__card--image-2 {
-    background-image: url(../imagenes/steamdeck.jpeg);
-  }
+    &--image-2 {
+      background-image: url(../imagenes/steamdeck.jpeg);
+    }
 
-  &__card--image-3 {
-    background-image: url(../imagenes/gtaremaster.jpg);
+    &--image-3 {
+      background-image: url(../imagenes/gtaremaster.jpg);
+    }
   }
 
   &__text {
