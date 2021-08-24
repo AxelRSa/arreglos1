@@ -9,75 +9,47 @@ html(lang='en')
 		link(rel='preconnect' href='https://fonts.googleapis.com')
 		link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
 		link(href='https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,500&display=swap' rel='stylesheet')
+	//- MIXINS
+	include ./pug/_card.pug
 	body
-		.menu
-			.navigation-menu
-				.navigation
-					img.navigation__logo(src='imagenes/SA-logo2.jpg' alt='logo')
-					nav.navigation__bar
-						ul.navigation__list
-							li.navigation__item
-								a.navigation__link(href='#')
-									include ../iconos/windows-header.svg
-							li.navigation__item
-								a.navigation__link(href='#') 
-									include ../iconos/xbox-header.svg
-							li.navigation__item
-								a.navigation__link(href='#') 
-									include ../iconos/playstation-header.svg
-							li.navigation__item
-								a.navigation__link(href='#') 
-									include ../iconos/nintendo-header.svg 
+		.header
+			img.header__logo(src='imagenes/SA-logo2.jpg' alt='logo')
+			nav.nav
+				ul.nav__list
+					li.nav__item
+						a.nav__link(href='#')
+							include ../iconos/windows-header.svg
+					li.nav__item
+						a.nav__link(href='#') 
+							include ../iconos/xbox-header.svg
+					li.nav__item
+						a.nav__link(href='#') 
+							include ../iconos/playstation-header.svg
+					li.nav__item
+						a.nav__link(href='#') 
+							include ../iconos/nintendo-header.svg 
 		.hero
-			.titulo-slider
-				.titulo
-					h1.titulo__texto Mejores Juegos En Descuento
-			.header
-				img.header__imagen(src='imagenes/cyberpunk-2077.jpg' alt='')
-				.header__texto-contenedor
-					h1.header__title Cyberpunk 2077
-					p.header__texto
+			h1.hero__titulo Mejores Juegos En Descuento
+			.slider
+				img.slider__imagen(src='imagenes/cyberpunk-2077.jpg' alt='')
+				.slider__contenedor
+					h1.slider__title Cyberpunk 2077
+					p.slider__texto
 						| Cyberpunk 2077 es un videojuego desarrollado y publicado por CD
 						| Projekt, que se lanzó para Microsoft Windows, PlayStation 4, y Xbox
 						| One el 10 de diciembre de 2020, y posteriormente en PlayStation 5,
 						| Xbox Series X|S y Google Stadia.
-				.header__boton.header__boton--derecha &#62;
-				.header__boton.header__boton--izquierda &#60;
-				.header__paginacion
-					li.header__paginacion-link
-					li.header__paginacion-link
-					li.header__paginacion-link
-		.calendar
-			h1.calendar__texto Calendario De Lanzamiento
-			.calendar__container
-				.card
-					.card__content
-						h3.card__title HollowNight
-						.card__date
-							.card__day 12
-							.card__pipe |
-							.card__month JUL.
-						.card__footer
-							.card__icon
-								include ../iconos/windows.svg
-							.card__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-				.card
-					.card__content
-						h3.card__title Bioshock
-						.card__date
-							.card__day 15
-							.card__pipe |
-							.card__month JUL.
-						.card__footer
-							.card__icon
-								include ../iconos/windows.svg
-							.card__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
+				.slider__boton.slider__boton--derecha &#62;
+				.slider__boton.slider__boton--izquierda &#60;
+				.slider__paginacion
+					li.slider__dot
+					li.slider__dot
+					li.slider__dot
+		.calendar-launch
+			h1.calendar-launch__titulo Calendario De Lanzamiento
+			.calendar-launch__container
+				+card("HollowNight",12,"JUL.",true,true,true)
+				+card("Bioshock",15,"JUL.",true,true,true)
 				.card
 					.card__content
 						h3.card__title Portal
@@ -144,129 +116,129 @@ html(lang='en')
 						.card__footer
 							.card__icon
 								include ../iconos/windows.svg
-			.contenido
-				h1.contenido__reclamar Juegos Gratis
-				.contenido__container
-					a.cartas(href='https://www.g2a.com/watch-dogs-2-ubisoft-connect-key-europe-i10000017705010?adid=GA-MEX_PB_DIGI_SN_PROD_INV_Watch+Dogs&id=45&gclid=CjwKCAjwx8iIBhBwEiwA2quaq0lgPb5MTjl1OahMo9cQX-uPfO-RggH0FLvvnmTP0AjijWj3jrH1ARoCHSgQAvD_BwE&gclsrc=aw.ds' target='_blank')
-						img.cartas__image(src='./imagenes/dogs2.jpg' alt='')
-						h3.cartas__title Watch Dogs 2
-						.cartas__date
-							.cartas__day 2
-							.cartas__pipe |
-							.cartas__month AGO.
-						.cartas__footer
-							.cartas__icon
-								include ../iconos/windows.svg
-							.cartas__icon
-								include ../iconos/xbox.svg
-					a.cartas(href='https://news.xbox.com/es-latam/2019/12/03/halo-reach-ya-disponible-en-halo-the-master-chief-collection/' target='_blank')
-						img.cartas__image(src='./imagenes/reach.jpg' alt='')
-						h3.cartas__title Halo Reach
-						.cartas__date
-							.cartas__day 5
-							.cartas__pipe |
-							.cartas__month AGO.
-						.cartas__footer
-							.cartas__icon
-								include ../iconos/windows.svg
-							.cartas__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-					a.cartas(href='https://www.dlcompare.es/juegos/100005833/comprar-descargar-cuphead' target='_blank')
-						img.cartas__image(src='./imagenes/cuphead.png' alt='')
-						h3.cartas__title Cup head
-						.cartas__date
-							.cartas__day 8
-							.cartas__pipe |
-							.cartas__month AGO.
-						.cartas__footer
-							.cartas__icon
-								include ../iconos/windows.svg
-							.cartas__icon
-								include ../iconos/xbox.svg
-					a.cartas(href='https://www.g2a.com/god-of-war-i10000258687001' target='_blank')
-						img.cartas__image(src='./imagenes/godofwar.jpg' alt='')
-						h3.cartas__title God Of War
-						.cartas__date
-							.cartas__day 10
-							.cartas__pipe |
-							.cartas__month AGO.
-						.cartas__footer
-							.cartas__icon
-								include ../iconos/windows.svg
-							.cartas__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-					a.cartas(href='https://2k.com/en-US/game/bioshock-infinite/' target='_blank')
-						img.cartas__image(src='./imagenes/bioshock.jpg' alt='')
-						h3.cartas__title Bioshock
-						.cartas__date
-							.cartas__day 15
-							.cartas__pipe |
-							.cartas__month AGO.
-						.cartas__footer
-							.cartas__icon
-								include ../iconos/windows.svg
-							.cartas__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-					a.cartas(href='https://www.microsoft.com/es-mx/p/dishonored-definitive-edition/c299qvc2bsjf?activetab=pivot:overviewtab' target='_blank')
-						img.cartas__image(src='./imagenes/dishonored.jpg' alt='')
-						h3.cartas__title Dishonored
-						.cartas__date
-							.cartas__day 20
-							.cartas__pipe |
-							.cartas__month AGO.
-						.cartas__footer
-							.cartas__icon
-								include ../iconos/windows.svg
-					a.cartas(href='https://elderscrolls.bethesda.net/es/skyrim' target='_blank')
-						img.cartas__image(src='./imagenes/skyrim.png' alt='')
-						h3.cartas__title Skyrim
-						.cartas__date
-							.cartas__day 23
-							.cartas__pipe |
-							.cartas__month AGO.
-						.cartas__footer
-							.cartas__icon
-								include ../iconos/windows.svg
-							.card__icon
-								include ../iconos/playstation.svg
-					a.cartas(href='https://playoverwatch.com/es-mx/' target='_blank')
-						img.cartas__image(src='./imagenes/Overwatch.jpg' alt='')
-						h3.cartas__title Overwatch
-						.cartas__date
-							.cartas__day 25
-							.cartas__pipe |
-							.cartas__month AGO.
-						.cartas__footer
-							.cartas__icon
-								include ../iconos/windows.svg
-							.cartas__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-			.noticias
-				h1.noticias__titulo Noticias De La Semana
-				.noticias__container
-					.noticias__card
-						.noticias__card-imagen.noticias__card--image-1
-						h2.noticias__title Steam Oferts
-						p.noticias__text
-							| Mejores descuentos Anuales de Steam, donde se dice que steam tira la casa por la ventana.
-						a.noticias__boton(href='#') READ MORE
-					.noticias__card
-						.noticias__card-imagen.noticias__card--image-2
-						h2.noticias__title Steam Deck
-						p.noticias__text
-							| La Steam Deck  se convirtió en la consola que más expectativa genera en los gamers asiduos a las consolas. Y es que, pocos días después de que Nintendo anunció la Switch OLED
-						a.noticias__boton(href='#') READ MORE
-					.noticias__card
-						.noticias__card-imagen.noticias__card--image-3
-						h2.noticias__title Remaster GTA SA
-						p.noticias__text
-							| Algo que muchos fans están esperando, podría hacerse realidad muy pronto, pues Grand Theft Auto San Andreas Remaster estaría en producción
-						a.noticias__boton(href='#') READ MORE
+		.calendar-free
+			h1.calendar-free__reclamar Juegos Gratis
+			.calendar-free__container
+				a.cartas(href='https://www.g2a.com/watch-dogs-2-ubisoft-connect-key-europe-i10000017705010?adid=GA-MEX_PB_DIGI_SN_PROD_INV_Watch+Dogs&id=45&gclid=CjwKCAjwx8iIBhBwEiwA2quaq0lgPb5MTjl1OahMo9cQX-uPfO-RggH0FLvvnmTP0AjijWj3jrH1ARoCHSgQAvD_BwE&gclsrc=aw.ds' target='_blank')
+					img.cartas__image(src='./imagenes/dogs2.jpg' alt='')
+					h3.cartas__title Watch Dogs 2
+					.cartas__date
+						.cartas__day 2
+						.cartas__pipe |
+						.cartas__month AGO.
+					.cartas__footer
+						.cartas__icon
+							include ../iconos/windows.svg
+						.cartas__icon
+							include ../iconos/xbox.svg
+				a.cartas(href='https://news.xbox.com/es-latam/2019/12/03/halo-reach-ya-disponible-en-halo-the-master-chief-collection/' target='_blank')
+					img.cartas__image(src='./imagenes/reach.jpg' alt='')
+					h3.cartas__title Halo Reach
+					.cartas__date
+						.cartas__day 5
+						.cartas__pipe |
+						.cartas__month AGO.
+					.cartas__footer
+						.cartas__icon
+							include ../iconos/windows.svg
+						.cartas__icon
+							include ../iconos/xbox.svg
+						.card__icon
+							include ../iconos/playstation.svg
+				a.cartas(href='https://www.dlcompare.es/juegos/100005833/comprar-descargar-cuphead' target='_blank')
+					img.cartas__image(src='./imagenes/cuphead.png' alt='')
+					h3.cartas__title Cup head
+					.cartas__date
+						.cartas__day 8
+						.cartas__pipe |
+						.cartas__month AGO.
+					.cartas__footer
+						.cartas__icon
+							include ../iconos/windows.svg
+						.cartas__icon
+							include ../iconos/xbox.svg
+				a.cartas(href='https://www.g2a.com/god-of-war-i10000258687001' target='_blank')
+					img.cartas__image(src='./imagenes/godofwar.jpg' alt='')
+					h3.cartas__title God Of War
+					.cartas__date
+						.cartas__day 10
+						.cartas__pipe |
+						.cartas__month AGO.
+					.cartas__footer
+						.cartas__icon
+							include ../iconos/windows.svg
+						.cartas__icon
+							include ../iconos/xbox.svg
+						.card__icon
+							include ../iconos/playstation.svg
+				a.cartas(href='https://2k.com/en-US/game/bioshock-infinite/' target='_blank')
+					img.cartas__image(src='./imagenes/bioshock.jpg' alt='')
+					h3.cartas__title Bioshock
+					.cartas__date
+						.cartas__day 15
+						.cartas__pipe |
+						.cartas__month AGO.
+					.cartas__footer
+						.cartas__icon
+							include ../iconos/windows.svg
+						.cartas__icon
+							include ../iconos/xbox.svg
+						.card__icon
+							include ../iconos/playstation.svg
+				a.cartas(href='https://www.microsoft.com/es-mx/p/dishonored-definitive-edition/c299qvc2bsjf?activetab=pivot:overviewtab' target='_blank')
+					img.cartas__image(src='./imagenes/dishonored.jpg' alt='')
+					h3.cartas__title Dishonored
+					.cartas__date
+						.cartas__day 20
+						.cartas__pipe |
+						.cartas__month AGO.
+					.cartas__footer
+						.cartas__icon
+							include ../iconos/windows.svg
+				a.cartas(href='https://elderscrolls.bethesda.net/es/skyrim' target='_blank')
+					img.cartas__image(src='./imagenes/skyrim.png' alt='')
+					h3.cartas__title Skyrim
+					.cartas__date
+						.cartas__day 23
+						.cartas__pipe |
+						.cartas__month AGO.
+					.cartas__footer
+						.cartas__icon
+							include ../iconos/windows.svg
+						.card__icon
+							include ../iconos/playstation.svg
+				a.cartas(href='https://playoverwatch.com/es-mx/' target='_blank')
+					img.cartas__image(src='./imagenes/Overwatch.jpg' alt='')
+					h3.cartas__title Overwatch
+					.cartas__date
+						.cartas__day 25
+						.cartas__pipe |
+						.cartas__month AGO.
+					.cartas__footer
+						.cartas__icon
+							include ../iconos/windows.svg
+						.cartas__icon
+							include ../iconos/xbox.svg
+						.card__icon
+							include ../iconos/playstation.svg
+		.noticias
+			h1.noticias__titulo Noticias De La Semana
+			.noticias__container
+				.card-new
+					.noticias__card-imagen.noticias__card-imagen--image-1
+					h2.noticias__title Steam Oferts
+					p.noticias__text
+						| Mejores descuentos Anuales de Steam, donde se dice que steam tira la casa por la ventana.
+					a.noticias__boton(href='#') READ MORE
+				.noticias__card
+					.noticias__card-imagen.noticias__card-imagen--image-2
+					h2.noticias__title Steam Deck
+					p.noticias__text
+						| La Steam Deck  se convirtió en la consola que más expectativa genera en los gamers asiduos a las consolas. Y es que, pocos días después de que Nintendo anunció la Switch OLED
+					a.noticias__boton(href='#') READ MORE
+				.noticias__card
+					.noticias__card-imagen.noticias__card-imagen--image-3
+					h2.noticias__title Remaster GTA SA
+					p.noticias__text
+						| Algo que muchos fans están esperando, podría hacerse realidad muy pronto, pues Grand Theft Auto San Andreas Remaster estaría en producción
+					a.noticias__boton(href='#') READ MORE

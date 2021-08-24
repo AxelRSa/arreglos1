@@ -1,0 +1,17 @@
+mixin card(titulo,day,month,windows,xbox,playstation)
+	.card
+		h3.card__title=titulo
+		.card__date
+			.card__day=day
+			.card__pipe |
+			.card__month=month
+		.card__footer
+			if windows
+				.card__icon
+					include ../../iconos/windows.svg
+			if xbox
+				.card__icon
+					include ../../iconos/xbox.svg
+			if playstation
+				.card__icon
+					include ../../iconos/playstation.svg
