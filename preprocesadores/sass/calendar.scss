@@ -1,12 +1,12 @@
 .calendar {
 
-  &__texto {
+  &-launch__titulo {
     height: 50px;
     background: rgb(204, 204, 204);
     margin: 0;
   }
 
-  &__container {
+  &-launch__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

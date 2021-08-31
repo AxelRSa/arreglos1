@@ -5,22 +5,24 @@ body {
   font-family: "DM Mono", monospace;
 }
 
-.navigation {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
   background: black;
+  position: relative;
 }
-.navigation__logo {
+.header__logo {
   cursor: pointer;
 }
-.navigation__item {
+
+.nav__item {
   list-style: none;
   display: inline-block;
   padding: 0px 20px;
 }
-.navigation__link {
+.nav__link {
   font-family: "Gill Sans";
   font-weight: 500;
   font-size: 16px;
@@ -28,39 +30,30 @@ body {
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
-.navigation__link:hover {
+.nav__link:hover {
   color: #0088a9;
 }
-.navigation__icon {
+.nav__icon {
   width: 25px;
   height: 25px;
 }
 
-.titulo__texto {
-  height: 50px;
-  background: #cccccc;
-  margin: 0;
-}
-
-.contenido__reclamar {
-  height: 50px;
-  background: #cccccc;
-  margin: 0;
-}
-
-.contenido__reclamar {
+.hero__titulo {
   height: 40px;
   background: #cccccc;
   margin: 0;
 }
 
-.header {
+.slider {
   display: flex;
   width: 100%;
   height: 500px;
   position: relative;
 }
-.header::after {
+.slider__contenedor {
+  position: absolute;
+}
+.slider::after {
   content: "";
   background-color: rgba(228, 68, 228, 0.659);
   width: 100%;
@@ -70,24 +63,24 @@ body {
   left: 0;
   opacity: 0.3;
 }
-.header__imagen {
+.slider__imagen {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.header__texto-contenedor {
+.slider__texto-contenedor {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 60px;
   width: 400px;
   color: #fff;
   z-index: 10;
 }
-.header__title {
+.slider__title {
   font-size: 43px;
-  color: rgba(237, 236, 236, 0.905);
+  color: #080808;
 }
-.header__boton {
+.slider__boton {
   font-size: 40pt;
   color: red;
   font-weight: bolder;
@@ -98,18 +91,18 @@ body {
   cursor: pointer;
   z-index: 1;
 }
-.header__boton:hover {
+.slider__boton:hover {
   background-color: rgba(255, 255, 255, 0.4);
   transition: 0.5s;
   color: black;
 }
-.header__boton--derecha {
+.slider__boton--derecha {
   right: 10px;
 }
-.header__boton--izquierda {
+.slider__boton--izquierda {
   left: 10px;
 }
-.header__paginacion {
+.slider__paginacion {
   position: absolute;
   bottom: 10px;
   left: 0px;
@@ -117,7 +110,7 @@ body {
   text-align: center;
   z-index: 1;
 }
-.header__paginacion-link {
+.slider__paginacion-link {
   list-style: none;
   width: 25px;
   height: 25px;
@@ -128,12 +121,12 @@ body {
   cursor: pointer;
 }
 
-.calendar__texto {
+.calendar-launch__titulo {
   height: 50px;
   background: #cccccc;
   margin: 0;
 }
-.calendar__container {
+.calendar-launch__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -188,6 +181,12 @@ body {
   margin: 0 2px;
 }
 
+.calendar-free__reclamar {
+  height: 40px;
+  background: #cccccc;
+  margin: 0;
+}
+
 .cartas {
   width: 140px;
   height: 200px;
@@ -212,7 +211,7 @@ body {
   background-color: #13131367;
   z-index: -1;
 }
-.cartas:hover .cartas__image {
+.cartas:hover .cartas-link__imagen {
   transform: translate(-50%, -50%) scale(1.2);
 }
 .cartas__image {
@@ -256,53 +255,53 @@ body {
   margin: 0 2px;
 }
 
-.contenido__container {
+.noticias__container {
   display: flex;
   justify-content: center;
   background: rgba(0, 0, 0, 0.823);
   flex-wrap: wrap;
 }
 
-.noticias__titulo {
+.new__titulo {
   height: 40px;
   background: #d8d8d8;
   margin: 0;
 }
-.noticias__container {
+.new__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background: black;
 }
-.noticias__card {
+.new__card {
   background: #3e0157;
   width: 400px;
   margin: 10px;
   border-radius: 15px;
 }
-.noticias__title {
+.new__title {
   color: #cccccc;
 }
-.noticias__card-imagen {
+.new__card-imagen {
   height: 150px;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
-.noticias__card--image-1 {
+.new__card-imagen--image-1 {
   background-image: url(../imagenes/Steamoferts.jpg);
 }
-.noticias__card--image-2 {
+.new__card-imagen--image-2 {
   background-image: url(../imagenes/steamdeck.jpeg);
 }
-.noticias__card--image-3 {
+.new__card-imagen--image-3 {
   background-image: url(../imagenes/gtaremaster.jpg);
 }
-.noticias__text {
+.new__text {
   padding: 10px;
   color: #ffffff;
 }
-.noticias__boton {
+.new__boton {
   background-color: rgba(150, 14, 14, 0.981);
   color: #fff;
   padding: 15px 15px;
@@ -311,7 +310,7 @@ body {
   margin: 20px 50px;
   text-decoration: none;
 }
-.noticias__card:hover {
+.new__card:hover {
   background-color: #110909;
   color: white;
   cursor: pointer;

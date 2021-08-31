@@ -1,3 +1,12 @@
+.calendar-free{
+  
+  &__reclamar {
+    height: 40px;
+		background: rgb(204, 204, 204);
+		margin: 0;
+  }
+}
+
 .cartas {
   width: 140px;
   height: 200px;
@@ -23,7 +32,7 @@
     z-index: -1;
   }
 
-  &:hover .cartas__image {
+  &:hover .cartas-link__imagen {
     transform: translate(-50%, -50%) scale(1.2);
   }
 
@@ -43,7 +52,7 @@
     padding: 12px 0;
     text-align: center;
   }
-
+  
   &__date {
     display: flex;
     align-items: center;

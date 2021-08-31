@@ -1,549 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azteca-Playss</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,500&amp;display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <div class="header"><img class="header__logo" src="imagenes/SA-logo2.jpg" alt="logo">
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#"><svg class="header__icon" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></a></li>
-        <li class="nav__item"><a class="nav__link" href="#">
-            <svg class="header__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></a></li>
-        <li class="nav__item"><a class="nav__link" href="#">
-            <svg class="header__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor">
-              <title>PlayStation</title>
-              <path
-                d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-            </svg></a></li>
-        <li class="nav__item"><a class="nav__link" href="#">
-            <svg class="header__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-              style="enable-background:new 0 0 512 512;" xml:space="preserve">
-              <g>
-                <g>
-                  <path d="M391.5,211c-33.359,0-60.5,27.141-60.5,60.5s27.141,60.5,60.5,60.5s60.5-27.141,60.5-60.5S424.859,211,391.5,211z
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azteca-Playss</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,500&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header"><img class="header__logo" src="imagenes/SA-logo2.jpg" alt="logo">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#"><svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></a></li>
+          <li class="nav__item"><a class="nav__link" href="#">
+               <svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></a></li>
+          <li class="nav__item"><a class="nav__link" href="#">
+               <svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></a></li>
+          <li class="nav__item"><a class="nav__link" href="#">
+               <svg class="header__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M391.5,211c-33.359,0-60.5,27.141-60.5,60.5s27.141,60.5,60.5,60.5s60.5-27.141,60.5-60.5S424.859,211,391.5,211z
 			 M391.5,302c-16.817,0-30.5-13.683-30.5-30.5c0-16.817,13.683-30.5,30.5-30.5c16.817,0,30.5,13.683,30.5,30.5
-			S408.317,302,391.5,302z" />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path d="M115,0C51.589,0,0,51.589,0,115v282c0,63.411,51.589,115,115,115h126V0H115z M211,482h-96c-46.869,0-85-38.131-85-85V115
-			c0-46.869,38.131-85,85-85h96V482z" />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path d="M397,0H271v512h126c63.411,0,115-51.589,115-115V115C512,51.589,460.411,0,397,0z M482,397c0,46.869-38.131,85-85,85h-96
-			V30h96c46.869,0,85,38.131,85,85V397z" />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path d="M120.5,90C87.141,90,60,117.141,60,150.5S87.141,211,120.5,211s60.5-27.141,60.5-60.5S153.859,90,120.5,90z M120.5,181
-			c-16.817,0-30.5-13.683-30.5-30.5s13.683-30.5,30.5-30.5s30.5,13.683,30.5,30.5S137.317,181,120.5,181z" />
-                </g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-            </svg></a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="hero">
-    <h1 class="hero__titulo">Mejores Juegos En Descuento</h1>
-    <div class="slider"><img class="slider__imagen" src="imagenes/cyberpunk-2077.jpg" alt="">
-      <div class="slider__contenedor">
-        <h1 class="slider__title">Cyberpunk 2077</h1>
-        <p class="slider__texto">
-          Cyberpunk 2077 es un videojuego desarrollado y publicado por CD
-          Projekt, que se lanzó para Microsoft Windows, PlayStation 4, y Xbox
-          One el 10 de diciembre de 2020, y posteriormente en PlayStation 5,
-          Xbox Series X|S y Google Stadia.
-        </p>
-      </div>
-      <div class="slider__boton slider__boton--derecha">&#62;</div>
-      <div class="slider__boton slider__boton--izquierda">&#60;</div>
-      <div class="slider__paginacion">
-        <li class="slider__dot"></li>
-        <li class="slider__dot"></li>
-        <li class="slider__dot"></li>
-      </div>
+			S408.317,302,391.5,302z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M115,0C51.589,0,0,51.589,0,115v282c0,63.411,51.589,115,115,115h126V0H115z M211,482h-96c-46.869,0-85-38.131-85-85V115
+			c0-46.869,38.131-85,85-85h96V482z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M397,0H271v512h126c63.411,0,115-51.589,115-115V115C512,51.589,460.411,0,397,0z M482,397c0,46.869-38.131,85-85,85h-96
+			V30h96c46.869,0,85,38.131,85,85V397z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M120.5,90C87.141,90,60,117.141,60,150.5S87.141,211,120.5,211s60.5-27.141,60.5-60.5S153.859,90,120.5,90z M120.5,181
+			c-16.817,0-30.5-13.683-30.5-30.5s13.683-30.5,30.5-30.5s30.5,13.683,30.5,30.5S137.317,181,120.5,181z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg></a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  <div class="calendar-launch">
-    <h1 class="calendar-launch__titulo">Calendario De Lanzamiento</h1>
-    <div class="calendar-launch__container">
-      <div class="card">
-        <h3 class="card__title">HollowNight</h3>
-        <div class="card__date">
-          <div class="card__day">12</div>
-          <div class="card__pipe">|</div>
-          <div class="card__month">JUL.</div>
-        </div>
-        <div class="card__footer">
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>PlayStation</title>
-              <path
-                d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-            </svg></div>
-        </div>
-      </div>
-      <div class="card">
-        <h3 class="card__title">Bioshock</h3>
-        <div class="card__date">
-          <div class="card__day">15</div>
-          <div class="card__pipe">|</div>
-          <div class="card__month">JUL.</div>
-        </div>
-        <div class="card__footer">
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>PlayStation</title>
-              <path
-                d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-            </svg></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__content">
-          <h3 class="card__title">Portal</h3>
-          <div class="card__date">
-            <div class="card__day">20</div>
-            <div class="card__pipe">|</div>
-            <div class="card__month">JUL.</div>
-          </div>
-          <div class="card__footer">
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Windows</title>
-                <path
-                  d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-              </svg></div>
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Xbox</title>
-                <path
-                  d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-              </svg></div>
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>PlayStation</title>
-                <path
-                  d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-              </svg></div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__content">
-          <h3 class="card__title">Farmer'life</h3>
-          <div class="card__date">
-            <div class="card__day">23</div>
-            <div class="card__pipe">|</div>
-            <div class="card__month">JUL.</div>
-          </div>
-          <div class="card__footer">
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Windows</title>
-                <path
-                  d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-              </svg></div>
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Xbox</title>
-                <path
-                  d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-              </svg></div>
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>PlayStation</title>
-                <path
-                  d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-              </svg></div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__content">
-          <h3 class="card__title">Dead Trahs</h3>
-          <div class="card__date">
-            <div class="card__day">23</div>
-            <div class="card__pipe">|</div>
-            <div class="card__month">JUL.</div>
-          </div>
-          <div class="card__footer">
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Windows</title>
-                <path
-                  d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-              </svg></div>
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Xbox</title>
-                <path
-                  d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-              </svg></div>
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>PlayStation</title>
-                <path
-                  d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-              </svg></div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__content">
-          <h3 class="card__title">Black Book</h3>
-          <div class="card__date">
-            <div class="card__day">12</div>
-            <div class="card__pipe">|</div>
-            <div class="card__month">JUL.</div>
-          </div>
-          <div class="card__footer">
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Windows</title>
-                <path
-                  d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-              </svg></div>
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Xbox</title>
-                <path
-                  d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-              </svg></div>
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>PlayStation</title>
-                <path
-                  d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-              </svg></div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__content">
-          <h3 class="card__title">Glichtpunk</h3>
-          <div class="card__date">
-            <div class="card__day">30</div>
-            <div class="card__pipe">|</div>
-            <div class="card__month">JUL.</div>
-          </div>
-          <div class="card__footer">
-            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <title>Windows</title>
-                <path
-                  d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-              </svg></div>
+    <div class="hero">
+      <h1 class="hero__titulo">Mejores Juegos En Descuento</h1>
+      <div class="slider"><img class="slider__imagen" src="imagenes/cyberpunk-2077.jpg" alt="">
+        <div class="slider__contenedor">
+          <h1 class="slider__title">Cyberpunk 2077</h1>
+          <p class="slider__texto">
+            Cyberpunk 2077 es un videojuego desarrollado y publicado por CD
+            Projekt, que se lanzó para Microsoft Windows, PlayStation 4, y Xbox
+            One el 10 de diciembre de 2020, y posteriormente en PlayStation 5,
+            Xbox Series X|S y Google Stadia.
+          </p>
+          <div class="slider__boton slider__boton--derecha">&#62;</div>
+          <div class="slider__boton slider__boton--izquierda">&#60;</div>
+          <div class="slider__paginacion">
+            <li class="slider__dot"></li>
+            <li class="slider__dot"></li>
+            <li class="slider__dot"></li>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="calendar-free">
-    <h1 class="calendar-free__reclamar">Juegos Gratis</h1>
-    <div class="calendar-free__container"><a class="cartas"
-        href="https://www.g2a.com/watch-dogs-2-ubisoft-connect-key-europe-i10000017705010?adid=GA-MEX_PB_DIGI_SN_PROD_INV_Watch+Dogs&amp;id=45&amp;gclid=CjwKCAjwx8iIBhBwEiwA2quaq0lgPb5MTjl1OahMo9cQX-uPfO-RggH0FLvvnmTP0AjijWj3jrH1ARoCHSgQAvD_BwE&amp;gclsrc=aw.ds"
-        target="_blank"><img class="cartas__image" src="./imagenes/dogs2.jpg" alt="">
-        <h3 class="cartas__title">Watch Dogs 2</h3>
-        <div class="cartas__date">
-          <div class="cartas__day">2</div>
-          <div class="cartas__pipe">|</div>
-          <div class="cartas__month">AGO.</div>
-        </div>
-        <div class="cartas__footer">
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></div>
-        </div>
-      </a><a class="cartas"
-        href="https://news.xbox.com/es-latam/2019/12/03/halo-reach-ya-disponible-en-halo-the-master-chief-collection/"
-        target="_blank"><img class="cartas__image" src="./imagenes/reach.jpg" alt="">
-        <h3 class="cartas__title">Halo Reach</h3>
-        <div class="cartas__date">
-          <div class="cartas__day">5</div>
-          <div class="cartas__pipe">|</div>
-          <div class="cartas__month">AGO.</div>
-        </div>
-        <div class="cartas__footer">
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>PlayStation</title>
-              <path
-                d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-            </svg></div>
-        </div>
-      </a><a class="cartas" href="https://www.dlcompare.es/juegos/100005833/comprar-descargar-cuphead"
-        target="_blank"><img class="cartas__image" src="./imagenes/cuphead.png" alt="">
-        <h3 class="cartas__title">Cup head</h3>
-        <div class="cartas__date">
-          <div class="cartas__day">8</div>
-          <div class="cartas__pipe">|</div>
-          <div class="cartas__month">AGO.</div>
-        </div>
-        <div class="cartas__footer">
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></div>
-        </div>
-      </a><a class="cartas" href="https://www.g2a.com/god-of-war-i10000258687001" target="_blank"><img
-          class="cartas__image" src="./imagenes/godofwar.jpg" alt="">
-        <h3 class="cartas__title">God Of War</h3>
-        <div class="cartas__date">
-          <div class="cartas__day">10</div>
-          <div class="cartas__pipe">|</div>
-          <div class="cartas__month">AGO.</div>
-        </div>
-        <div class="cartas__footer">
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>PlayStation</title>
-              <path
-                d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-            </svg></div>
-        </div>
-      </a><a class="cartas" href="https://2k.com/en-US/game/bioshock-infinite/" target="_blank"><img
-          class="cartas__image" src="./imagenes/bioshock.jpg" alt="">
-        <h3 class="cartas__title">Bioshock</h3>
-        <div class="cartas__date">
-          <div class="cartas__day">15</div>
-          <div class="cartas__pipe">|</div>
-          <div class="cartas__month">AGO.</div>
-        </div>
-        <div class="cartas__footer">
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>PlayStation</title>
-              <path
-                d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-            </svg></div>
-        </div>
-      </a><a class="cartas"
-        href="https://www.microsoft.com/es-mx/p/dishonored-definitive-edition/c299qvc2bsjf?activetab=pivot:overviewtab"
-        target="_blank"><img class="cartas__image" src="./imagenes/dishonored.jpg" alt="">
-        <h3 class="cartas__title">Dishonored</h3>
-        <div class="cartas__date">
-          <div class="cartas__day">20</div>
-          <div class="cartas__pipe">|</div>
-          <div class="cartas__month">AGO.</div>
-        </div>
-        <div class="cartas__footer">
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-        </div>
-      </a><a class="cartas" href="https://elderscrolls.bethesda.net/es/skyrim" target="_blank"><img
-          class="cartas__image" src="./imagenes/skyrim.png" alt="">
-        <h3 class="cartas__title">Skyrim</h3>
-        <div class="cartas__date">
-          <div class="cartas__day">23</div>
-          <div class="cartas__pipe">|</div>
-          <div class="cartas__month">AGO.</div>
-        </div>
-        <div class="cartas__footer">
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>PlayStation</title>
-              <path
-                d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-            </svg></div>
-        </div>
-      </a><a class="cartas" href="https://playoverwatch.com/es-mx/" target="_blank"><img class="cartas__image"
-          src="./imagenes/Overwatch.jpg" alt="">
-        <h3 class="cartas__title">Overwatch</h3>
-        <div class="cartas__date">
-          <div class="cartas__day">25</div>
-          <div class="cartas__pipe">|</div>
-          <div class="cartas__month">AGO.</div>
-        </div>
-        <div class="cartas__footer">
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Windows</title>
-              <path
-                d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
-            </svg></div>
-          <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>Xbox</title>
-              <path
-                d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z" />
-            </svg></div>
-          <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <title>PlayStation</title>
-              <path
-                d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z" />
-            </svg></div>
-        </div>
-      </a></div>
-  </div>
-  <div class="noticias">
-    <h1 class="noticias__titulo">Noticias De La Semana</h1>
-    <div class="noticias__container">
-      <div class="card-new">
-        <div class="noticias__card-imagen noticias__card-imagen--image-1"></div>
-        <h2 class="noticias__title">Steam Oferts</h2>
-        <p class="noticias__text">Mejores descuentos Anuales de Steam, donde se dice que steam tira la casa por la
-          ventana.</p><a class="noticias__boton" href="#">READ MORE</a>
-      </div>
-      <div class="noticias__card">
-        <div class="noticias__card-imagen noticias__card-imagen--image-2"></div>
-        <h2 class="noticias__title">Steam Deck</h2>
-        <p class="noticias__text">La Steam Deck se convirtió en la consola que más expectativa genera en los gamers
-          asiduos a las consolas. Y es que, pocos días después de que Nintendo anunció la Switch OLED</p><a
-          class="noticias__boton" href="#">READ MORE</a>
-      </div>
-      <div class="noticias__card">
-        <div class="noticias__card-imagen noticias__card-imagen--image-3"></div>
-        <h2 class="noticias__title">Remaster GTA SA</h2>
-        <p class="noticias__text">Algo que muchos fans están esperando, podría hacerse realidad muy pronto, pues Grand
-          Theft Auto San Andreas Remaster estaría en producción</p><a class="noticias__boton" href="#">READ MORE</a>
+    <div class="calendar-launch">
+      <h1 class="calendar-launch__titulo">Calendario De Lanzamiento</h1>
+      <div class="calendar-launch__container">
+          <div class="card">
+            <h3 class="card__title">HollowNight</h3>
+            <div class="card__date">
+              <div class="card__day">12</div>
+              <div class="card__pipe">|</div>
+              <div class="card__month">JUL.</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Bioshock</h3>
+            <div class="card__date">
+              <div class="card__day">15</div>
+              <div class="card__pipe">|</div>
+              <div class="card__month">JUL.</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Portal</h3>
+            <div class="card__date">
+              <div class="card__day">20</div>
+              <div class="card__pipe">|</div>
+              <div class="card__month">JUL</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Farmer'life</h3>
+            <div class="card__date">
+              <div class="card__day">23</div>
+              <div class="card__pipe">|</div>
+              <div class="card__month">JUL</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Dead Trhs</h3>
+            <div class="card__date">
+              <div class="card__day">23</div>
+              <div class="card__pipe">|</div>
+              <div class="card__month">JUL</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Black Book</h3>
+            <div class="card__date">
+              <div class="card__day">12</div>
+              <div class="card__pipe">|</div>
+              <div class="card__month">JUL</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Glichtpunk</h3>
+            <div class="card__date">
+              <div class="card__day">30</div>
+              <div class="card__pipe">|</div>
+              <div class="card__month">JUL</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            </div>
+          </div>
       </div>
     </div>
-  </div>
-</body>
-
+    <div class="calendar-free">
+      <h1 class="calendar-free__reclamar">Juegos Gratis</h1>
+      <div class="cartas"><a class="cartas" href="https://www.g2a.com/watch-dogs-2-ubisoft-connect-key-europe-i10000017705010?adid=GA-MEX_PB_DIGI_SN_PROD_INV_Watch+Dogs&amp;id=45&amp;gclid=CjwKCAjwx8iIBhBwEiwA2quaq0lgPb5MTjl1OahMo9cQX-uPfO-RggH0FLvvnmTP0AjijWj3jrH1ARoCHSgQAvD_BwE&amp;gclsrc=aw.ds" target="_blank"><img class="cartas__image" src="./imagenes/dogs2.jpg" alt="">
+          <h3 class="cartas__title">Watch Dogs 2</h3>
+          <div class="cartas__date">
+            <div class="cartas__day">2</div>
+            <div class="cartas__pipe">|</div>
+            <div class="cartas__month">AGO.</div>
+          </div>
+          <div class="cartas__footer">
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+          </div></a><a class="cartas" href="https://news.xbox.com/es-latam/2019/12/03/halo-reach-ya-disponible-en-halo-the-master-chief-collection/" target="_blank"><img class="cartas__image" src="./imagenes/reach.jpg" alt="">
+          <h3 class="cartas__title">Halo Reach</h3>
+          <div class="cartas__date">
+            <div class="cartas__day">5</div>
+            <div class="cartas__pipe">|</div>
+            <div class="cartas__month">AGO.</div>
+          </div>
+          <div class="cartas__footer">
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+          </div></a><a class="cartas" href="https://www.dlcompare.es/juegos/100005833/comprar-descargar-cuphead" target="_blank"><img class="cartas__image" src="./imagenes/cuphead.png" alt="">
+          <h3 class="cartas__title">Cup head</h3>
+          <div class="cartas__date">
+            <div class="cartas__day">8</div>
+            <div class="cartas__pipe">|</div>
+            <div class="cartas__month">AGO.</div>
+          </div>
+          <div class="cartas__footer">
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+          </div></a><a class="cartas" href="https://www.g2a.com/god-of-war-i10000258687001" target="_blank"><img class="cartas__image" src="./imagenes/godofwar.jpg" alt="">
+          <h3 class="cartas__title">God Of War</h3>
+          <div class="cartas__date">
+            <div class="cartas__day">10</div>
+            <div class="cartas__pipe">|</div>
+            <div class="cartas__month">AGO.</div>
+          </div>
+          <div class="cartas__footer">
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+          </div></a><a class="cartas" href="https://2k.com/en-US/game/bioshock-infinite/" target="_blank"><img class="cartas__image" src="./imagenes/bioshock.jpg" alt="">
+          <h3 class="cartas__title">Bioshock</h3>
+          <div class="cartas__date">
+            <div class="cartas__day">15</div>
+            <div class="cartas__pipe">|</div>
+            <div class="cartas__month">AGO.</div>
+          </div>
+          <div class="cartas__footer">
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+          </div></a><a class="cartas" href="https://www.microsoft.com/es-mx/p/dishonored-definitive-edition/c299qvc2bsjf?activetab=pivot:overviewtab" target="_blank"><img class="cartas__image" src="./imagenes/dishonored.jpg" alt="">
+          <h3 class="cartas__title">Dishonored</h3>
+          <div class="cartas__date">
+            <div class="cartas__day">20</div>
+            <div class="cartas__pipe">|</div>
+            <div class="cartas__month">AGO.</div>
+          </div>
+          <div class="cartas__footer">
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+          </div></a><a class="cartas" href="https://elderscrolls.bethesda.net/es/skyrim" target="_blank"><img class="cartas__image" src="./imagenes/skyrim.png" alt="">
+          <h3 class="cartas__title">Skyrim</h3>
+          <div class="cartas__date">
+            <div class="cartas__day">23</div>
+            <div class="cartas__pipe">|</div>
+            <div class="cartas__month">AGO.</div>
+          </div>
+          <div class="cartas__footer">
+            <div class="cartas__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            <div class="card__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+          </div></a><a class="cartas" href="https://playoverwatch.com/es-mx/" target="_blank"><img class="cartas__image" src="./imagenes/Overwatch.jpg" alt="">
+          <h3 class="cartas__title">Overwatch</h3>
+          <div class="cartas-link__date">
+            <div class="cartas-link__day">25</div>
+            <div class="cartas-link__pipe">|</div>
+            <div class="cartas-link__month">AGO.</div>
+          </div>
+          <div class="cartas-link__footer">
+            <div class="cartas-link__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            <div class="cartas-link__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg></div>
+            <div class="card-link__icon"><svg class="card__svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>PlayStation</title><path d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg></div>
+          </div></a></div>
+    </div>
+    <div class="noticias">
+      <h1 class="noticias__titulo">Noticias De La Semana</h1>
+      <div class="new__container">
+        <div class="new__card">
+          <div class="new__card-imagen new__card-imagen--image-1"></div>
+          <h2 class="new__title">Steam Oferts</h2>
+          <p class="new__text">Mejores descuentos Anuales de Steam, donde se dice que steam tira la casa por la ventana.</p><a class="new__boton" href="#">READ MORE</a>
+        </div>
+        <div class="new__card">
+          <div class="new__card-imagen new__card-imagen--image-2"></div>
+          <h2 class="new__title">Steam Deck</h2>
+          <p class="new__text">La Steam Deck  se convirtió en la consola que más expectativa genera en los gamers asiduos a las consolas. Y es que, pocos días después de que Nintendo anunció la Switch OLED</p><a class="new__boton" href="#">READ MORE</a>
+        </div>
+        <div class="new__card">
+          <div class="new__card-imagen new__card-imagen--image-3"></div>
+          <h2 class="new__title">Remaster GTA SA</h2>
+          <p class="new__text">Algo que muchos fans están esperando, podría hacerse realidad muy pronto, pues Grand Theft Auto San Andreas Remaster estaría en producción</p><a class="new__boton" href="#">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -11,6 +11,7 @@ html(lang='en')
 		link(href='https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,500&display=swap' rel='stylesheet')
 	//- MIXINS
 	include ./pug/_card.pug
+	include ./pug/_new.pug
 	body
 		.header
 			img.header__logo(src='imagenes/SA-logo2.jpg' alt='logo')
@@ -39,86 +40,25 @@ html(lang='en')
 						| Projekt, que se lanzó para Microsoft Windows, PlayStation 4, y Xbox
 						| One el 10 de diciembre de 2020, y posteriormente en PlayStation 5,
 						| Xbox Series X|S y Google Stadia.
-				.slider__boton.slider__boton--derecha &#62;
-				.slider__boton.slider__boton--izquierda &#60;
-				.slider__paginacion
-					li.slider__dot
-					li.slider__dot
-					li.slider__dot
+					.slider__boton.slider__boton--derecha &#62;
+					.slider__boton.slider__boton--izquierda &#60;
+					.slider__paginacion
+						li.slider__dot
+						li.slider__dot
+						li.slider__dot
 		.calendar-launch
 			h1.calendar-launch__titulo Calendario De Lanzamiento
 			.calendar-launch__container
 				+card("HollowNight",12,"JUL.",true,true,true)
 				+card("Bioshock",15,"JUL.",true,true,true)
-				.card
-					.card__content
-						h3.card__title Portal
-						.card__date
-							.card__day 20
-							.card__pipe |
-							.card__month JUL.
-						.card__footer
-							.card__icon
-								include ../iconos/windows.svg
-							.card__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-				.card
-					.card__content
-						h3.card__title Farmer'life
-						.card__date
-							.card__day 23
-							.card__pipe |
-							.card__month JUL.
-						.card__footer
-							.card__icon
-								include ../iconos/windows.svg
-							.card__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-				.card
-					.card__content
-						h3.card__title Dead Trahs
-						.card__date
-							.card__day 23
-							.card__pipe |
-							.card__month JUL.
-						.card__footer
-							.card__icon
-								include ../iconos/windows.svg
-							.card__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-				.card
-					.card__content
-						h3.card__title Black Book
-						.card__date
-							.card__day 12
-							.card__pipe |
-							.card__month JUL.
-						.card__footer
-							.card__icon
-								include ../iconos/windows.svg
-							.card__icon
-								include ../iconos/xbox.svg
-							.card__icon
-								include ../iconos/playstation.svg
-				.card
-					.card__content
-						h3.card__title Glichtpunk
-						.card__date
-							.card__day 30
-							.card__pipe |
-							.card__month JUL.
-						.card__footer
-							.card__icon
-								include ../iconos/windows.svg
+				+card("Portal",20,"JUL",true,true,true)
+				+card("Farmer'life",23,"JUL",true,true,false)
+				+card("Dead Trhs",23,"JUL",true,true,true)
+				+card("Black Book",12,"JUL",true,true,true)
+				+card("Glichtpunk",30,"JUL",true)
 		.calendar-free
 			h1.calendar-free__reclamar Juegos Gratis
-			.calendar-free__container
+			.cartas
 				a.cartas(href='https://www.g2a.com/watch-dogs-2-ubisoft-connect-key-europe-i10000017705010?adid=GA-MEX_PB_DIGI_SN_PROD_INV_Watch+Dogs&id=45&gclid=CjwKCAjwx8iIBhBwEiwA2quaq0lgPb5MTjl1OahMo9cQX-uPfO-RggH0FLvvnmTP0AjijWj3jrH1ARoCHSgQAvD_BwE&gclsrc=aw.ds' target='_blank')
 					img.cartas__image(src='./imagenes/dogs2.jpg' alt='')
 					h3.cartas__title Watch Dogs 2
@@ -210,35 +150,36 @@ html(lang='en')
 				a.cartas(href='https://playoverwatch.com/es-mx/' target='_blank')
 					img.cartas__image(src='./imagenes/Overwatch.jpg' alt='')
 					h3.cartas__title Overwatch
-					.cartas__date
-						.cartas__day 25
-						.cartas__pipe |
-						.cartas__month AGO.
-					.cartas__footer
-						.cartas__icon
+					.cartas-link__date
+						.cartas-link__day 25
+						.cartas-link__pipe |
+						.cartas-link__month AGO.
+					.cartas-link__footer
+						.cartas-link__icon
 							include ../iconos/windows.svg
-						.cartas__icon
+						.cartas-link__icon
 							include ../iconos/xbox.svg
-						.card__icon
+						.card-link__icon
 							include ../iconos/playstation.svg
 		.noticias
 			h1.noticias__titulo Noticias De La Semana
-			.noticias__container
-				.card-new
-					.noticias__card-imagen.noticias__card-imagen--image-1
-					h2.noticias__title Steam Oferts
-					p.noticias__text
+			.new__container
+				+new("image-1","Steam Oferts","Mejores descuentos Anuales de Steam, donde se dice que steam tira la casa por la ventana.","#","READ MORE")
+				.new__card
+					.new__card-imagen.new__card-imagen--image-1
+					h2.new__title Steam Oferts
+					p.new__text
 						| Mejores descuentos Anuales de Steam, donde se dice que steam tira la casa por la ventana.
-					a.noticias__boton(href='#') READ MORE
-				.noticias__card
-					.noticias__card-imagen.noticias__card-imagen--image-2
-					h2.noticias__title Steam Deck
-					p.noticias__text
+					a.new__boton(href='#') READ MORE
+				.new__card
+					.new__card-imagen.new__card-imagen--image-2
+					h2.new__title Steam Deck
+					p.new__text
 						| La Steam Deck  se convirtió en la consola que más expectativa genera en los gamers asiduos a las consolas. Y es que, pocos días después de que Nintendo anunció la Switch OLED
-					a.noticias__boton(href='#') READ MORE
-				.noticias__card
-					.noticias__card-imagen.noticias__card-imagen--image-3
-					h2.noticias__title Remaster GTA SA
-					p.noticias__text
+					a.new__boton(href='#') READ MORE
+				.new__card
+					.new__card-imagen.new__card-imagen--image-3
+					h2.new__title Remaster GTA SA
+					p.new__text
 						| Algo que muchos fans están esperando, podría hacerse realidad muy pronto, pues Grand Theft Auto San Andreas Remaster estaría en producción
-					a.noticias__boton(href='#') READ MORE
+					a.new__boton(href='#') READ MORE
