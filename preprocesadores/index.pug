@@ -34,12 +34,13 @@ html(lang='en')
 			.slider
 				img.slider__imagen(src='imagenes/cyberpunk-2077.jpg' alt='')
 				.slider__contenedor
-					h1.slider__title Cyberpunk 2077
-					p.slider__texto
-						| Cyberpunk 2077 es un videojuego desarrollado y publicado por CD
-						| Projekt, que se lanzó para Microsoft Windows, PlayStation 4, y Xbox
-						| One el 10 de diciembre de 2020, y posteriormente en PlayStation 5,
-						| Xbox Series X|S y Google Stadia.
+					.slider__text-container
+						h1.slider__title Cyberpunk 2077
+						p.slider__texto
+							| Cyberpunk 2077 es un videojuego desarrollado y publicado por CD
+							| Projekt, que se lanzó para Microsoft Windows, PlayStation 4, y Xbox
+							| One el 10 de diciembre de 2020, y posteriormente en PlayStation 5,
+							| Xbox Series X|S y Google Stadia.
 					.slider__boton.slider__boton--derecha &#62;
 					.slider__boton.slider__boton--izquierda &#60;
 					.slider__paginacion
@@ -164,7 +165,7 @@ html(lang='en')
 		.noticias
 			h1.noticias__titulo Noticias De La Semana
 			.new__container
-				+new("image-1","Steam Oferts","Mejores descuentos Anuales de Steam, donde se dice que steam tira la casa por la ventana.","#","READ MORE")
+				+new("new__card-imagen--image-3","Steam Oferts","Mejores descuentos Anuales de Steam, donde se dice que steam tira la casa por la ventana.","#","READ MORE","new__boton")(class="new__boton")
 				.new__card
 					.new__card-imagen.new__card-imagen--image-1
 					h2.new__title Steam Oferts
