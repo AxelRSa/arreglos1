@@ -322,3 +322,74 @@ body {
   transform: scale(1.03);
   transition: all 1s ease;
 }
+
+.contactos {
+  display: flex;
+  position: relative;
+}
+.contactos__izquierda {
+  height: 100vh;
+  width: 50%;
+  background: rgba(27, 26, 26, 0.877);
+}
+.contactos__derecha {
+  height: 100%;
+  width: 50%;
+  background: rgba(27, 26, 26, 0.877);
+}
+.contactos__mapa {
+  height: 100;
+  width: 100%;
+}
+
+.carta {
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+  position: relative;
+}
+.carta:hover .carta__front {
+  transform: rotateX(-180deg);
+}
+.carta:hover .carta__back {
+  transform: rotateX(0deg);
+}
+.carta__front {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../imagenes/contactos.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+.carta__back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  color: #ffffff;
+  text-align: center;
+}
+.carta__titulo {
+  margin: 60% auto 30% auto;
+  font-size: 26px;
+}
+.carta__texto {
+  font-size: 20px;
+}
