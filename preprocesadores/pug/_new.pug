@@ -1,7 +1,7 @@
 mixin new(image1,titulo,text,href,name,classes)
-	.new__card 
-		div(class=`new__card-imagen ${image1}`)
-		h2.new__title=titulo 
-		p.new__text=text 
-		a(class!=attributes.class href=href)= name
+	.card__new
+		div(class=`card__imagen ${image1}`)
+		h2.card__title=titulo 
+		p.card__text=text 
+		a(class!=attributes.class href=href)=name 
 		a(class=classes href=href)= name

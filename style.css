@@ -153,7 +153,7 @@ body {
   border: 5px solid rgba(251, 252, 253, 0.78);
 }
 .card:hover {
-  transform: translate(-3%, -3%) scale(1);
+  transform: translate(-3%, -3%) scale(1.1);
   background-color: #04cc0496;
 }
 .card__title {
@@ -192,7 +192,13 @@ body {
   margin: 0;
 }
 
-.cartas {
+.juegos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #020202;
+}
+.juegos__imagen {
   width: 140px;
   height: 200px;
   clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 16%);
@@ -206,7 +212,7 @@ body {
   margin: 15px;
   text-decoration: none;
 }
-.cartas::after {
+.juegos__imagen::after {
   content: "";
   position: absolute;
   top: 0;
@@ -216,10 +222,10 @@ body {
   background-color: #13131367;
   z-index: -1;
 }
-.cartas:hover .cartas-link__imagen {
-  transform: translate(-50%, -50%) scale(1.2);
+.juegos__imagen:hover {
+  transform: translate(-5%, -5%) scale(1.1);
 }
-.cartas__image {
+.juegos__image {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -230,28 +236,28 @@ body {
   z-index: -1;
   transition: transform 0.3s;
 }
-.cartas__title {
+.juegos__title {
   padding: 12px 0;
   text-align: center;
 }
-.cartas__date {
+.juegos__date {
   display: flex;
   align-items: center;
   padding: 10px 0 0 10px;
 }
-.cartas__day {
+.juegos__day {
   font-size: 40px;
   font-weight: bold;
 }
-.cartas__pipe {
+.juegos__pipe {
   padding: 0 8px;
 }
-.cartas__footer {
+.juegos__footer {
   color: #ffffff;
   display: flex;
   padding: 22px 0 0 5px;
 }
-.cartas__icon {
+.juegos__icon {
   width: 20px;
   height: 20px;
   background-color: #ffffff62;
@@ -266,47 +272,47 @@ body {
   background: rgba(0, 0, 0, 0.823);
   flex-wrap: wrap;
 }
-
-.new__titulo {
+.noticias__titulo {
   height: 40px;
   background: #d8d8d8;
   margin: 0;
 }
-.new__container {
+
+.card__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background: black;
 }
-.new__card {
+.card__new {
   background: #3e0157;
   width: 400px;
   margin: 10px;
   border-radius: 15px;
 }
-.new__title {
+.card__title {
   color: #cccccc;
 }
-.new__card-imagen {
+.card__imagen {
   height: 150px;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
-.new__card-imagen--image-1 {
+.card__imagen--image-1 {
   background-image: url(../imagenes/Steamoferts.jpg);
 }
-.new__card-imagen--image-2 {
+.card__imagen--image-2 {
   background-image: url(../imagenes/steamdeck.jpeg);
 }
-.new__card-imagen--image-3 {
+.card__imagen--image-3 {
   background-image: url(../imagenes/gtaremaster.jpg);
 }
-.new__text {
+.card__text {
   padding: 10px;
   color: #ffffff;
 }
-.new__boton {
+.card__boton {
   background-color: rgba(150, 14, 14, 0.981);
   color: #fff;
   padding: 15px 15px;
@@ -315,7 +321,7 @@ body {
   margin: 20px 50px;
   text-decoration: none;
 }
-.new__card:hover {
+.card__new:hover {
   background-color: #110909;
   color: white;
   cursor: pointer;
@@ -333,13 +339,7 @@ body {
   background: rgba(27, 26, 26, 0.877);
 }
 .contactos__derecha {
-  height: 100%;
-  width: 50%;
   background: rgba(27, 26, 26, 0.877);
-}
-.contactos__mapa {
-  height: 100;
-  width: 100%;
 }
 
 .carta {

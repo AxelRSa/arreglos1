@@ -7,21 +7,28 @@
   }
 }
 
-.cartas {
-  width: 140px;
-  height: 200px;
-  clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 16%);
-  background-color: rgba(0, 0, 0, 0.22);
-  color: rgba(255, 255, 255, 0.967);
-  border-radius: 15px;
-  font-family: sans-serif;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  margin: 15px;
-  text-decoration: none;
+.juegos {
 
-  &::after {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #020202;
+  
+  &__imagen {
+    width: 140px;
+    height: 200px;
+    clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 16%);
+    background-color: rgba(0, 0, 0, 0.22);
+    color: rgba(255, 255, 255, 0.967);
+    border-radius: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    text-decoration: none;
+  }  
+&__imagen::after {
     content: "";
     position: absolute;
     top: 0;
@@ -31,10 +38,10 @@
     background-color: #13131367;
     z-index: -1;
   }
-
-  &:hover .cartas-link__imagen {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
+  
+&__imagen:hover  {
+  transform: translate(-5%, -5%) scale(1.1);
+}
 
   &__image {
     position: absolute;

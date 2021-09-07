@@ -9,15 +9,10 @@
 	}
 
 	&__derecha {
-		height: 100%;
-		width: 50%;
 		background: rgba(27, 26, 26, 0.877);
 	}
 
-	&__mapa {
-		height: 100;
-		width: 100%;
-	}
+
 }
 
 .carta {
@@ -76,4 +71,4 @@
 	&__texto {
 		font-size: 20px;
 	}
-}
+} 
